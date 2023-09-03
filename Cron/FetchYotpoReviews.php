@@ -56,8 +56,8 @@ class FetchYotpoReviews
         $allReviews = [];
 
         try {
-            for ($page = 1; $page <= $totalPages; $page++) {
-                $url = "{$baseUrl}&count={$perPage}&page={$page}";
+            for ($page = 1; $page <= $this->totalPages; $page++) {
+                $url = "{$baseUrl}&count={$this->perPage}&page={$page}";
                 $this->curl->get($url);
                 $response = $this->curl->getBody();
 
