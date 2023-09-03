@@ -1,0 +1,10 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- other configurations -->
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="fetchYotpoReviewsCommand" xsi:type="object">Kamephis\YotpoImporter\Console\FetchReviewsCommand</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

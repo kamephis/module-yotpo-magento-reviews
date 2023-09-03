@@ -1,0 +1,26 @@
+{
+    "name": "kamephis/module-yotpo-magento-reviews",
+    "description": "Yotpo Reviews Importer",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Marlon Böhland",
+            "email": "marlon.boehland@lovehoneygroup.com",
+            "role": "Developer"
+        }
+    ],
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Kamephis\\YotpoImporter\\": ""
+        }
+    }
+}

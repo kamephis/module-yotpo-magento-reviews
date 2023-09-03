@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <yotpo_importer>
+            <settings>
+                <store_id>1</store_id> <!-- Default Store ID -->
+                <per_page>100</per_page> <!-- Default number of items per page -->
+                <total_pages>1000</total_pages> <!-- Default total number of pages -->
+            </settings>
+        </yotpo_importer>
+    </default>
+</config>
