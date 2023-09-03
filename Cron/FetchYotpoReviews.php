@@ -52,7 +52,7 @@ class FetchYotpoReviews
 
     private function fetchYotpoReviews(): array
     {
-        $baseUrl = "https://api.yotpo.com/v1/apps/{$appKey}/reviews?utoken={$authToken}";
+        $baseUrl = "https://api.yotpo.com/v1/apps/{$this->appKey}/reviews?utoken={$this->authToken}";
         $allReviews = [];
 
         try {
@@ -121,7 +121,7 @@ class FetchYotpoReviews
             $review->setStatusId(Review::STATUS_PENDING);
             $review->setTitle($reviewData['title']);
             $review->setNickname($reviewData['name']);
-            $review->setStores([1]); // change if needed
+            $review->setStores([$this->storeId]);
             $review->setDetail($reviewData['content']);
 
             try {
